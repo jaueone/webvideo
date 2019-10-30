@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AcsDemo Language="Chinese">
+    <Form>
+        <Name>AcsDemo</Name>
+        <Controls>
+            <Control name="AcsDemo" text="门禁Demo"/>
+            <Control name="labelLanguage" text="语言(Language)"/>
+            <Control name="groupBoxVersionInfo" text="版本信息"/>
+            <Control name="radioButtonAlarmInformation" text="报警信息"/>
+            <Control name="radioButtonLocalLog" text="本地日志"/>
+            <Control name="buttonClear" text="清空"/>
+            <Control name="buttonSave" text="保存"/>
+            <Control name="tabPageDoorInfo" text="门信息"/>
+            <Control name="tabPageDoorStatusPlan" text="门状态计划"/>
+            <Control name="tabPageRemoteControlDoor" text="远程控门"/>
+            <Control name="tabPageCardReaderInfo" text="读卡器信息"/>
+            <Control name="tabPageCardReaderPlan" text="读卡器验证计划"/>
+            <Control name="tabPageDeviceStatus" text="设备状态"/>
+            <Control name="tabPageRemoteControl" text="远程控制"/>
+            <Control name="labelMagneticType" text="门磁类型"/>
+            <Control name="labelOpenButtonType" text="开门按钮类型"/>
+            <Control name="labelOpenDuration" text="开门持续时间"/>
+            <Control name="labelDisabledOpenDuration" text="残疾人卡开门持续时间"/>
+            <Control name="labelMagneticAlarmTimeout" text="门磁检测超时报警时间"/>
+            <Control name="labelEnableDoorLock" text="是否启用闭门回锁"/>
+            <Control name="labelSuperPassword" text="超级密码"/>
+            <Control name="labelStressPassword" text="胁迫密码"/>
+            <Control name="labelUnlockPassword" text="解除码"/>
+            <Control name="buttonDoorCfgSave" text="保存"/>
+            <Control name="labelOpenDurationSecond" text="秒"/>
+            <Control name="labelMagneticAlarmTimeoutSecond" text="秒"/>
+            <Control name="labelDisabledOpenDurationSecond" text="秒"/>
+            <Control name="buttonDoorStatusPlanManagement" text="门状态计划配置"/>
+            <Control name="buttonDoorPlanTemplateManagement" text="计划模板配置"/>
+            <Control name="buttonDoorHolidayGroupManagement" text="假日组配置"/>
+            <Control name="buttonDoorHolidayPlanManagement" text="假日计划配置"/>
+            <Control name="buttonDoorWeekPlanManagement" text="周计划配置"/>
+            <Control name="buttonDoorOpen" text="开门"/>
+            <Control name="buttonDoorAlwaysClose" text="常闭"/>
+            <Control name="buttonDoorAlwaysOpen" text="常开"/>
+            <Control name="buttonDoorClose" text="关门"/>
+            <Control name="labelSwipeIntervalSecond" text="秒"/>
+            <Control name="buttonCardReaderCfgSave" text="保存"/>
+            <Control name="labelSwipeInterval" text="重复刷卡间隔时间"/>
+            <Control name="labelBuzzerPolarity" text="蜂鸣器极性"/>
+            <Control name="labelErrorLedPolarity" text="Error LED极性"/>
+            <Control name="label1OkLedPolarity" text="OK LED极性"/>
+            <Control name="label1CardReaderEnable" text="是否使能"/>
+            <Control name="labelPressTimeoutSecond" text="秒"/>
+            <Control name="labelPressTimeout" text="按键超时时间"/>
+            <Control name="labelEnableFailAlarm" text="是否启用读卡失败超次报警"/>
+            <Control name="labelOfflineCheckTimeSecond" text="秒"/>
+            <Control name="labelOfflineCheckTime" text="掉线检测时间"/>
+            <Control name="labelEnableTamperCheck" text="是否支持防拆检测"/>
+            <Control name="labelMaxReadCardFailNum" text="最大读卡失败次数"/>
+            <Control name="buttonCardReaderPlanManagement" text="读卡器验证计划配置"/>
+            <Control name="buttonCardReaderPlanTemplateManagement" text="计划模板配置"/>
+            <Control name="buttonCardReaderHolidayGroupManagement" text="假日组配置"/>
+            <Control name="buttonCardReaderHolidayPlanManagement" text="假日计划配置"/>
+            <Control name="buttonCardReaderWeekPlanManagement" text="周计划配置"/>
+            <Control name="tabPageDoorStatus" text="门状态"/>
+            <Control name="tabPageHostStatus" text="主机状态"/>
+            <Control name="tabPageCardReaderStatus" text="读卡器状态"/>
+            <Control name="tabPageAlarmInStatus" text="报警输入口状态"/>
+            <Control name="tabPageAlarmOutStatus" text="报警输出口状态"/>
+            <Control name="tabPageCaseStatus" text="事件传感器状态"/>
+            <Control name="buttonCardPlanTemplateManagement" text="计划模板配置"/>
+            <Control name="buttonCardHolidayGroupManagement" text="假日组配置"/>
+            <Control name="buttonCardHolidayPlanManagement" text="假日计划配置"/>
+            <Control name="buttonCardWeekPlanManagement" text="周计划配置"/>
+            <Control name="buttonFaceManagement" text="人脸参数配置"/>
+            <Control name="buttonFingerPrintManagement" text="指纹参数配置"/>
+            <Control name="buttonCardNumAndUserLinkage" text="卡号关联用户参数配置"/>
+            <Control name="buttonCardManagement" text="卡参数配置"/>
+            <Control name="buttonClearAcsHost" text="清空门禁主机参数"/>
+            <Control name="buttonGetAcsHostEvent" text="门禁主机事件获取"/>
+            <Control name="buttonEventAndCardLinkageManagement" text="事件及卡号联动参数配置"/>
+            <Control name="buttonUserManagement" text="用户参数配置"/>
+            <Control name="tabPageUserManagement" text="用户管理"/>
+            <Control name="tabPageParamCfg" text="参数配置"/>
+            <Control name="tabPageBasicParam" text="基本参数"/>
+            <Control name="tabPageAcsXml" text="XML透传"/>
+            <Control name="tabPageModuleCfg" text="模板配置"/>
+            <Control name="tabPageRightCfg" text="权限配置"/>
+            <Control name="tabPageEventCfg" text="事件配置"/>
+            <Control name="buttonStaffManagementStaffCenter" text="人员管理（以人为中心）"/>
+            <Control name="buttonCardManagementStaffCenter" text="卡管理（以人为中心）"/>
+            <Control name="buttonFaceRecordManagement" text="人脸记录管理"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>AddDevice</Name>
+        <Controls>
+            <Control name="AddDevice" text="添加设备"/>
+            <Control name="labelPassword" text="密码"/>
+            <Control name="textBoxUserName" text="admin"/>
+            <Control name="labelUserName" text="用户名"/>
+            <Control name="labelPort" text="端口号"/>
+            <Control name="labelDeviceAddress" text="设备地址"/>
+            <Control name="labelLocalNode" text="本地节点名称"/>
+            <Control name="buttonCancel" text="取消"/>
+            <Control name="buttonAdd" text="添加"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>CardManagement</Name>
+        <Controls>
+            <Control name="CardManagement" text="卡参数配置"/>
+            <Control name="buttonExit" text="退出"/>
+            <Control name="buttonBatchAdd" text="批量添加"/>
+            <Control name="checkBoxCheckNumber" text="是否校验卡号"/>
+            <Control name="groupBox4" text="添加配置"/>
+            <Control name="buttonEdit" text="编辑"/>
+            <Control name="label1" text="就地控制器ID"/>
+            <Control name="buttonDeleteAllCard" text="删除所有卡"/>
+            <Control name="buttonSendIndividual" text="发送单项"/>
+            <Control name="buttonObtainIndividual" text="获取单项"/>
+            <Control name="buttonGetAll" text="获取所有"/>
+            <Control name="buttonSendAll" text="发送所有"/>
+            <Control name="columnHeader1" text="编号"/>
+            <Control name="columnHeader2" text="卡号"/>
+            <Control name="columnHeader3" text="卡是否有效"/>
+            <Control name="columnHeader4" text="卡密码"/>
+            <Control name="columnHeader5" text="卡类型"/>
+            <Control name="columnHeader6" text="首卡"/>
+            <Control name="columnHeader7" text="最大刷卡次数"/>
+            <Control name="columnHeader8" text="已刷卡次数"/>
+            <Control name="columnHeader9" text="有效期"/>
+            <Control name="columnHeader10" text="开始时间"/>
+            <Control name="columnHeader11" text="结束时间"/>
+            <Control name="columnHeader12" text="发送状态"/>
+            <Control name="columnHeader13" text="房间号"/>
+            <Control name="columnHeader23" text="楼层号"/>
+            <Control name="groupBox1" text="门权限"/>
+            <Control name="columnHeader14" text="门编号"/>
+            <Control name="columnHeader15" text="有权限"/>
+            <Control name="groupBox2" text="所属群组"/>
+            <Control name="columnHeader16" text="群组号"/>
+            <Control name="columnHeader17" text="属于"/>
+            <Control name="groupBox3" text="计划模板编号"/>
+            <Control name="columnHeader18" text="门下标"/>
+            <Control name="columnHeader19" text="卡权限下标"/>
+            <Control name="columnHeader20" text="计划模板编号"/>
+            <Control name="columnHeader21" text="状态"/>
+            <Control name="columnHeader22" text="操作"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>CardManagementByStaffCenter</Name>
+        <Controls>
+            <Control name="CardManagementByStaffCenter" text="卡管理"/>
+            <Control name="columnHeader1" text="编号"/>
+            <Control name="columnHeader2" text="工号"/>
+            <Control name="columnHeader3" text="卡号"/>
+            <Control name="columnHeader4" text="卡类型"/>
+            <Control name="columnHeader5" text="首次认证功能"/>
+            <Control name="groupBoxCardAddOrModify" text="卡添加或修改"/>
+            <Control name="labelAddCardNumber" text="添加卡的数量"/>
+            <Control name="labelEmployeeNo" text="工号"/>
+            <Control name="labelCardNo" text="卡号"/>
+            <Control name="labelCardType" text="卡类型"/>
+            <Control name="labelLeaderCard" text="首次认证功能"/>
+            <Control name="buttonAdd" text="添加到列表"/>
+            <Control name="buttonUpdateList" text="更新列表"/>
+            <Control name="buttonSend" text="发送"/>
+            <Control name="buttonModify" text="修改"/>
+            <Control name="groupBoxCardSearchOrDelete" text="卡查询或删除"/>
+            <Control name="buttonSearchAll" text="查询所有"/>
+            <Control name="buttonDeleteAll" text="删除所有"/>
+            <Control name="columnHeader16" text="编号"/>
+            <Control name="columnHeader17" text="工号"/>
+            <Control name="columnHeader6" text="编号"/>
+            <Control name="columnHeader7" text="卡号"/>
+            <Control name="groupBoxEmployeeNoCfg" text="工号配置"/>
+            <Control name="labelEmployeeNo2" text="工号"/>
+            <Control name="buttonUpdateEmployeeNo" text="更新"/>
+            <Control name="groupBoxCardNoCfg" text="卡号配置"/>
+            <Control name="labelCardNo2" text="卡号"/>
+            <Control name="buttonUpdateCardNo" text="更新"/>
+            <Control name="buttonSearchByEmployeeNo" text="按工号查询"/>
+            <Control name="buttonDeleteByEmployeeNo" text="按工号删除"/>
+            <Control name="buttonSearchByCardNo" text="按卡号查询"/>
+            <Control name="buttonDeleteByCardNo" text="按卡号删除"/>
+            <Control name="buttonSyn" text="同步到锁"/>
+            <Control name="buttonClearList" text="清空列表"/>
+            <Control name="groupBoxCardInfoCount" text="卡数量"/>
+            <Control name="labelEmployeeNo3" text="工号"/>
+            <Control name="labelCardInfoCount" text="卡数量"/>
+            <Control name="buttonGetAllCount" text="获取所有"/>
+            <Control name="buttonGetByEmployeeNo" text="按工号获取"/>
+            <Control name="columnHeader21" text="状态"/>
+            <Control name="columnHeader22" text="操作"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>ClearACSParameters</Name>
+        <Controls>
+            <Control name="ClearACSParameters" text="清空门禁主机参数"/>
+            <Control name="groupBoxClearAcs" text="清空门禁主机参数"/>
+            <Control name="checkBoxDoorWp" text="门状态周计划参数"/>
+            <Control name="checkBoxCardWp" text="读卡器周计划参数"/>
+            <Control name="checkBoxRightWp" text="卡权限周计划参数"/>
+            <Control name="checkBoxDoorHp" text="门状态假日计划参数"/>
+            <Control name="checkBoxCardHp" text="读卡器假日计划参数"/>
+            <Control name="checkBoxRightHp" text="卡权限假日计划参数"/>
+            <Control name="checkBoxDoorGp" text="门状态假日组参数"/>
+            <Control name="checkBoxCardGp" text="读卡器假日组参数"/>
+            <Control name="checkBoxRightGp" text="卡权限假日组参数"/>
+            <Control name="checkBoxDoorTp" text="门状态计划模板参数"/>
+            <Control name="checkBoxCardTp" text="读卡器验证方式计划模板参数"/>
+            <Control name="checkBoxRightTp" text="卡权限计划模板参数"/>
+            <Control name="checkBoxCardCfg" text="卡参数"/>
+            <Control name="checkBoxGroupCFG" text="群组参数"/>
+            <Control name="checkBoxAntiSneakCfg" text="反潜回参数"/>
+            <Control name="checkBoxEventLinkageCard" text="事件及卡号联动参数"/>
+            <Control name="checkBoxOpenPsw" text="密码开门使能参数"/>
+            <Control name="checkBoxStatistic" text="人数统计参数"/>
+            <Control name="labelNuber" text="就地控制器序号"/>
+            <Control name="buttonClear" text="清除"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>DevicePlanStatus</Name>
+        <Controls>
+            <Control name="DevicePlanStatus" text="设备计划状态"/>
+            <Control name="label18" text="索引"/>
+            <Control name="label17" text="设备类型"/>
+            <Control name="label19" text="计划模板编号"/>
+            <Control name="buttonGetCurrentPlan" text="获取"/>
+            <Control name="buttonSetCurrentPlan" text="设置"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>EventCardLinkage</Name>
+        <Controls>
+            <Control name="EventCardLinkage" text="事件及卡号联动"/>
+            <Control name="groupBoxEventID" text="事件ID"/>
+            <Control name="labelEventNo" text="事件编号"/>
+            <Control name="labelLoacalControllerID" text="就地控制器ID"/>
+            <Control name="checkBoxBuzzer" text="主机蜂鸣器"/>
+            <Control name="checkBoxMacAddressLinkage" text="MAC地址联动"/>
+            <Control name="checkBoxCardNoLinkage" text="卡号联动"/>
+            <Control name="groupBoxMacAddress" text="MAC地址(e.g.10:2A:3B:4C:5D:6E)"/>
+            <Control name="labelMacAddress" text="MAC地址"/>
+            <Control name="labelCardNo" text="卡号"/>
+            <Control name="labelEventSourceID" text="事件源ID"/>
+            <Control name="labelMajorType" text="主类型"/>
+            <Control name="labelMinorType" text="次类型"/>
+            <Control name="checkBoxRecordLinkage" text="联动录像"/>
+            <Control name="checkBoxSnapshortLinkage" text="联动抓图"/>
+            <Control name="buttonGet" text="获取"/>
+            <Control name="buttonSet" text="设置"/>
+            <Control name="groupBoxLinkage" text="联动参数"/>
+            <Control name="labelAlarmOut" text="报警输出号"/>
+            <Control name="labelAlarmOutClose" text="关闭报警输出关闭"/>
+            <Control name="labelBuzzerReaderCard" text="读卡器上的蜂鸣器"/>
+            <Control name="labelOpenDoor" text="联动开门"/>
+            <Control name="labelCloseDoor" text="联动关门"/>
+            <Control name="labelAlwaysOpenDoor" text="联动常开"/>
+            <Control name="labelAlwaysCloseDoor" text="联动常关"/>
+            <Control name="labelArming" text="关联防区布防"/>
+            <Control name="labelDisarming" text="关联防区撤防"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>FaceConfigure</Name>
+        <Controls>
+            <Control name="FaceConfigure" text="人脸管理配置"/>
+            <Control name="label3" text="人脸图片路径"/>
+            <Control name="buttonBrowse" text="浏览"/>
+            <Control name="label4" text="卡号"/>
+            <Control name="label2" text="上传的人脸照片大小必须小于200k"/>
+            <Control name="label1" text="如要上传人脸图片，必须先下发卡"/>
+            <Control name="buttonGet" text="获取"/>
+            <Control name="buttonPut" text="设置"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>FaceRecordManagement</Name>
+        <Controls>
+            <Control name="FaceRecordManagement" text="人脸记录管理"/>
+            <Control name="columnHeader1" text="编号"/>
+            <Control name="columnHeader2" text="人脸库类型"/>
+            <Control name="columnHeader5" text="人脸图片数据路径"/>
+            <Control name="groupBoxFaceRecordAddOrModifyOrSearch" text="人脸记录添加、修改、查询"/>
+            <Control name="labelPictureDataPath" text="人脸图片数据路径"/>
+            <Control name="buttonAdd" text="添加到列表"/>
+            <Control name="buttonUpdateList" text="更新列表"/>
+            <Control name="buttonSend" text="发送"/>
+            <Control name="buttonModify" text="修改"/>
+            <Control name="buttonSearch" text="查询"/>
+            <Control name="groupBoxFaceRecordDelete" text="按FDID删除人脸记录"/>
+            <Control name="groupBoxFPIDCfg" text="FPID配置"/>
+            <Control name="buttonUpdatFPID" text="更新"/>
+            <Control name="buttonDeleteAll" text="删除所有"/>
+            <Control name="buttonDeleteByFPID" text="按FPID删除"/>
+            <Control name="groupBoxFaceRecordCount" text="人脸记录数量"/>
+            <Control name="buttonClearList" text="清空列表"/>
+            <Control name="labelRecordDataNumber" text="人脸记录数量"/>
+            <Control name="buttonGetAllCount" text="获取所有"/>
+            <Control name="buttonGetByFDID" text="按FDID获取"/>
+            <Control name="columnHeader21" text="状态"/>
+            <Control name="columnHeader22" text="操作"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>FingerPrintMgr</Name>
+        <Controls>
+            <Control name="FingerPrintMgr" text="指纹管理配置"/>
+            <Control name="columnHeader1" text="编号"/>
+            <Control name="columnHeader2" text="指纹关联卡号"/>
+            <Control name="columnHeader3" text="指纹编号"/>
+            <Control name="columnHeader4" text="指纹类型"/>
+            <Control name="columnHeader5" text="指纹数据长度"/>
+            <Control name="columnHeader6" text="指纹数据路径"/>
+            <Control name="columnHeader9" text="工号"/>
+            <Control name="groupBox1" text="指纹配置信息"/>
+            <Control name="label1" text="卡号"/>
+            <Control name="label2" text="指纹编号"/>
+            <Control name="label8" text="工号"/>
+            <Control name="label3" text="指纹数据路径"/>
+            <Control name="buttonBrowse" text="浏览"/>
+            <Control name="label5" text="指纹类型"/>
+            <Control name="label4" text="指纹数据长度"/>
+            <Control name="label7" text="读卡器是否有效"/>
+            <Control name="label6" text="指纹数量"/>
+            <Control name="checkBoxNonBlock" text="设备回调是否非阻塞"/>
+            <Control name="buttonAdd" text="添加"/>
+            <Control name="buttonSet" text="设置"/>
+            <Control name="buttonGet" text="获取"/>
+            <Control name="label9" text="删除方式"/>
+            <Control name="groupBox2" text="按卡号方式删除"/>
+            <Control name="label10" text="需要删除的指纹"/>
+            <Control name="groupBox3" text="按读卡器方式删除"/>
+            <Control name="label11" text="指纹读卡器编号"/>
+            <Control name="checkBoxDeleteAll" text="是否删除所有"/>
+            <Control name="buttonDelete" text="删除"/>
+            <Control name="columnHeader7" text="状态"/>
+            <Control name="columnHeader8" text="信息"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>HolidayGroupPlan</Name>
+        <Controls>
+            <Control name="HolidayGroupPlan" text="假日组"/>
+            <Control name="label8" text="类型"/>
+            <Control name="label10" text="假日组名称"/>
+            <Control name="label9" text="假日组编号"/>
+            <Control name="checkBoxEnableHG" text="使能"/>
+            <Control name="label1" text="就地控制器ID"/>
+            <Control name="columnHeader1" text="编号"/>
+            <Control name="columnHeader2" text="假期计划编号"/>
+            <Control name="groupBox1" text="假期计划编号配置"/>
+            <Control name="label2" text="假日计划编号"/>
+            <Control name="buttonUpdate" text="更新"/>
+            <Control name="buttonGetTemplate" text="获取"/>
+            <Control name="buttonSetTemplate" text="设置"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>HolidayPlan</Name>
+        <Controls>
+            <Control name="HolidayPlan" text="假日计划"/>
+            <Control name="label1" text="类型"/>
+            <Control name="label2" text="假日计划编号"/>
+            <Control name="checkBoxEnablePlan" text="使能"/>
+            <Control name="label8" text="就地控制器ID"/>
+            <Control name="groupBox6" text="时间配置"/>
+            <Control name="label9" text="开始日期"/>
+            <Control name="label3" text="结束日期"/>
+            <Control name="columnHeader1" text="时间段"/>
+            <Control name="columnHeader2" text="使能"/>
+            <Control name="columnHeader3" text="门状态模式"/>
+            <Control name="columnHeader4" text="验证方式"/>
+            <Control name="columnHeader5" text="开始时间"/>
+            <Control name="columnHeader6" text="结束时间"/>
+            <Control name="label7" text="门状态模式"/>
+            <Control name="label5" text="开始时间"/>
+            <Control name="label6" text="验证方式"/>
+            <Control name="label4" text="结束时间"/>
+            <Control name="checkBoxEnableTimeSegment" text="使能"/>
+            <Control name="buttonAdd" text="更新"/>
+            <Control name="buttonConfirm" text="确认"/>
+            <Control name="buttonGet" text="获取"/>
+            <Control name="buttonSet" text="设置"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>PlanTemplate</Name>
+        <Controls>
+            <Control name="PlanTemplate" text="计划模板"/>
+            <Control name="label8" text="类型"/>
+            <Control name="label10" text="模板名称"/>
+            <Control name="label9" text="计划模板编号"/>
+            <Control name="checkBoxEnableHG" text="使能"/>
+            <Control name="columnHeader1" text="编号"/>
+            <Control name="columnHeader2" text="假期组编号"/>
+            <Control name="label1" text="就地控制器ID"/>
+            <Control name="groupBox1" text="模板配置"/>
+            <Control name="label2" text="假日组编号"/>
+            <Control name="label3" text="周计划编号"/>
+            <Control name="buttonUpdate" text="更新"/>
+            <Control name="buttonGetTemplate" text="获取"/>
+            <Control name="buttonSetTemplate" text="设置"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>StaffManagement</Name>
+        <Controls>
+            <Control name="StaffManagement" text="人员管理"/>
+            <Control name="columnHeader1" text="编号"/>
+            <Control name="columnHeader2" text="工号"/>
+            <Control name="columnHeader3" text="姓名"/>
+            <Control name="columnHeader4" text="人员类型"/>
+            <Control name="columnHeader5" text="是否关门延迟"/>
+            <Control name="columnHeader6" text="有效期起始时间"/>
+            <Control name="columnHeader7" text="有效期结束时间"/>
+            <Control name="columnHeader8" text="所属群组"/>
+            <Control name="columnHeader9" text="密码"/>
+            <Control name="columnHeader10" text="门权限"/>
+            <Control name="columnHeader11" text="门权限计划"/>
+            <Control name="columnHeader12" text="最大认证次数"/>
+            <Control name="columnHeader13" text="房间号"/>
+            <Control name="columnHeader18" text="层号"/>
+            <Control name="columnHeader19" text="反锁开门权限"/>
+            <Control name="columnHeader20" text="常开权限"/>
+            <Control name="columnHeader23" text="本地UI访问权限"/>
+            <Control name="columnHeader24" text="人员验证方式"/>
+            <Control name="columnHeader25" text="时间类型"/>
+            <Control name="columnHeader26" text="已认证次数"/>
+            <Control name="groupBoxUserAddOrModify" text="人员添加或修改"/>
+            <Control name="labelAddUserNumber" text="添加人员数量"/>
+            <Control name="labelEmployeeNo" text="工号"/>
+            <Control name="labelName" text="姓名"/>
+            <Control name="labelUserType" text="人员类型"/>
+            <Control name="checkBoxCloseDelayEnabled" text="是否关门延迟"/>
+            <Control name="label3" text="时间类型"/>
+            <Control name="labelBeginTime" text="有效期起始时间"/>
+            <Control name="labelEndTime" text="有效期结束时间"/>
+            <Control name="checkBoxTimeEnable" text="使能有效期"/>
+            <Control name="labelbelongGroup" text="所属群组"/>
+            <Control name="labelPassword" text="密码"/>
+            <Control name="labelDoorRight" text="门权限"/>
+            <Control name="labelMaxOpenDoorTime" text="最大认证次数"/>
+            <Control name="labelRoomNumber" text="房间号"/>
+            <Control name="label4" text="已认证次数"/>
+            <Control name="label1" text="层号"/>
+            <Control name="columnHeader14" text="门编号"/>
+            <Control name="columnHeader15" text="计划模板编号"/>
+            <Control name="groupBoxPlanTemplateNoCfg" text="计划模板编号配置"/>
+            <Control name="labelPlanTemplateNo" text="计划模板编号"/>
+            <Control name="buttonUpdate" text="更新"/>
+            <Control name="checkBoxDoubleLockRight" text="反锁开门权限"/>
+            <Control name="checkBoxAlwaysOpenRight" text="常开权限"/>
+            <Control name="checkBoxLocalUIRight" text="本地UI访问权限"/>
+            <Control name="label2" text="人员验证方式"/>
+            <Control name="buttonAdd" text="添加至列表"/>
+            <Control name="buttonUpdateList" text="更新列表"/>
+            <Control name="buttonSend" text="发送"/>
+            <Control name="buttonModify" text="修改"/>
+            <Control name="groupBoxUserSearchOrDelete" text="人员查询或删除"/>
+            <Control name="buttonSearchAll" text="查询所有"/>
+            <Control name="buttonDeleteAll" text="删除所有"/>
+            <Control name="columnHeader16" text="编号"/>
+            <Control name="columnHeader17" text="工号"/>
+            <Control name="groupBoxEmployeeNoCfg" text="员号配置"/>
+            <Control name="labelEmployeeNo2" text="工号"/>
+            <Control name="buttonUpdateEmployeeNo" text="更新"/>
+            <Control name="buttonSearchByEmployeeNo" text="按工号查询"/>
+            <Control name="buttonDeleteByEmployeeNo" text="按工号删除"/>
+            <Control name="buttonDeleteAll2" text="删除所有（包括人员、卡、指纹）"/>
+            <Control name="buttonDeleteByEmployeeNo2" text="按工号删除（包括人员、卡、指纹）"/>
+            <Control name="buttonSyn" text="同步到锁"/>
+            <Control name="buttonClearList" text="清空列表"/>
+            <Control name="groupBoxUserInfoCount" text="人员数量"/>
+            <Control name="labelUserInfoCount" text="人员数量"/>
+            <Control name="buttonGetCount" text="获取"/>
+            <Control name="columnHeader21" text="状态"/>
+            <Control name="columnHeader22" text="操作"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>SynInfo</Name>
+        <Controls>
+            <Control name="SynInfo" text="同步信息"/>
+            <Control name="buttonStart" text="开始同步"/>
+            <Control name="labelSynProgress" text="进度"/>
+            <Control name="columnHeader1" text="序列"/>
+            <Control name="columnHeader2" text="响应"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>Upgrade</Name>
+        <Controls>
+            <Control name="labelFirmWare" text="固件"/>
+            <Control name="m_btnBrowse" text="浏览"/>
+            <Control name="m_lblRestart" text="请重启你的设备"/>
+            <Control name="m_btnUpdate" text="更新"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>UserCardMgr</Name>
+        <Controls>
+            <Control name="UserCardMgr" text="用户卡号参数配置"/>
+            <Control name="label1" text="卡号"/>
+            <Control name="label2" text="用户名"/>
+            <Control name="label3" text="用户号"/>
+            <Control name="buttonGet" text="获取"/>
+            <Control name="buttonSet" text="设置"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>UserManagement</Name>
+        <Controls>
+            <Control name="UserManagement" text="用户管理"/>
+            <Control name="groupBoxUser" text="用户参数"/>
+            <Control name="label10" text="用户名"/>
+            <Control name="label11" text="旧密码"/>
+            <Control name="label13" text="MAC地址"/>
+            <Control name="label1" text="新密码"/>
+            <Control name="label12" text="用户IP"/>
+            <Control name="label14" text="用户类型"/>
+            <Control name="checkBoxAlarmOff" text="撤防"/>
+            <Control name="checkBoxSet" text="参数设置"/>
+            <Control name="checkBoxKey" text="网关"/>
+            <Control name="checkBoxSimulate" text="模拟量控制"/>
+            <Control name="checkBoxByPass" text="旁路"/>
+            <Control name="checkBoxGet" text="参数获取"/>
+            <Control name="checkBoxUpgrade" text="升级"/>
+            <Control name="checkBoxVoice" text="语音对讲"/>
+            <Control name="checkBoxFormat" text="格式化"/>
+            <Control name="checkBoxLog" text="日志"/>
+            <Control name="checkBoxResume" text="恢复"/>
+            <Control name="checkBoxAlarmOut" text="报警输出"/>
+            <Control name="checkBoxFarControl" text="远程控制"/>
+            <Control name="checkBoxAlarmOn" text="布防"/>
+            <Control name="checkBoxStart" text="重启关机"/>
+            <Control name="checkBoxAlarm" text="警号输出权限"/>
+            <Control name="checkBoxSerial" text="串口"/>
+            <Control name="checkBoxDisk" text="硬盘配置"/>
+            <Control name="AlarmGet" text="获取"/>
+            <Control name="buttonSet" text="设置"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>VideoCall</Name>
+        <Controls>
+            <Control name="VideoCall" text="语音通话"/>
+            <Control name="buttonCall" text="呼叫"/>
+            <Control name="buttonAnswer" text="回答"/>
+            <Control name="buttonCancel" text="取消"/>
+            <Control name="buttonHangUp" text="挂起"/>
+            <Control name="label1" text="当前状态"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>WeekPlan</Name>
+        <Controls>
+            <Control name="WeekPlan" text="周计划"/>
+            <Control name="label1" text="类型"/>
+            <Control name="label2" text="周计划编号"/>
+            <Control name="checkBoxEnableWP" text="使能"/>
+            <Control name="label8" text="就地控制器ID"/>
+            <Control name="groupBox6" text="时间设置"/>
+            <Control name="label3" text="星期"/>
+            <Control name="columnHeader1" text="时间段"/>
+            <Control name="columnHeader2" text="使能"/>
+            <Control name="columnHeader3" text="门状态模式"/>
+            <Control name="columnHeader4" text="验证方式"/>
+            <Control name="columnHeader5" text="开始时间"/>
+            <Control name="columnHeader6" text="结束时间"/>
+            <Control name="EditTimeSegment" text="编辑时间段"/>
+            <Control name="label7" text="门禁状态模式"/>
+            <Control name="label5" text="开始时间"/>
+            <Control name="label6" text="验证方式"/>
+            <Control name="label4" text="结束时间"/>
+            <Control name="checkBoxEnable" text="使能"/>
+            <Control name="buttonAdd" text="更新"/>
+            <Control name="buttonConfirm" text="确认"/>
+            <Control name="buttonGetWP" text="获取"/>
+            <Control name="buttonSetWP" text="设置"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>CardConfigure</Name>
+        <Controls>
+            <Control name="CardConfigure" text="卡参数"/>
+            <Control name="labelAddCardNumber" text="添加卡数"/>
+            <Control name="labelCardPassword" text="卡密码"/>
+            <Control name="labelTheCardNumber" text="卡号"/>
+            <Control name="buttonTestParameters" text="测试参数"/>
+            <Control name="groupBox1" text="需要配置的参数"/>
+            <Control name="checkBoxAll" text="全选"/>
+            <Control name="checkBoxWorkNo" text="工号"/>
+            <Control name="checkBoxEffectiveParameters" text="卡有效参数"/>
+            <Control name="checkBoxTheValidityOfParameter" text="有效期参数"/>
+            <Control name="checkBoxDoorLimitParameters" text="门权限参数"/>
+            <Control name="checkBoxTheFirstCardParameters" text="首卡参数"/>
+            <Control name="checkBoxTheBiggestCreditCardNumber" text="最大刷卡次数参数"/>
+            <Control name="checkBoxBelongsToGroupParameters" text="所属群组参数"/>
+            <Control name="checkBoxHaveCreditCardNumber" text="已刷卡次数参数"/>
+            <Control name="checkBoxCardTypeParameter" text="卡类型参数"/>
+            <Control name="checkBoxCardPasswordParameters" text="卡密码参数"/>
+            <Control name="checkBoxCardAccessPlan" text="卡权限计划参数"/>
+            <Control name="checkBoxCardIsValid" text="卡有效"/>
+            <Control name="checkBoxFirstCard" text="首卡"/>
+            <Control name="labelCardType" text="卡类型"/>
+            <Control name="groupBox2" text="卡有效期"/>
+            <Control name="checkBoxEnable" text="使能"/>
+            <Control name="labelStartTime" text="开始时间"/>
+            <Control name="labelEndTime" text="结束时间"/>
+            <Control name="label" text="最大刷卡"/>
+            <Control name="labelCreditCard" text="已刷卡"/>
+            <Control name="groupBox3" text="门权限"/>
+            <Control name="groupBox4" text="所属群组"/>
+            <Control name="labelRoomNO" text="房间号"/>
+            <Control name="label1" text="楼层号"/>
+            <Control name="groupBoxAttendanceChecking" text="考勤参数"/>
+            <Control name="label2" text="工号"/>
+            <Control name="label3" text="姓名"/>
+            <Control name="label4" text="部门编号"/>
+            <Control name="label5" text="排班计划编号"/>
+            <Control name="label6" text="排班计划类型"/>
+            <Control name="groupBoxCardRight" text="卡权限"/>
+            <Control name="label7" text="锁ID"/>
+            <Control name="label10" text="锁代码"/>
+            <Control name="label8" text="卡持卡人ID"/>
+            <Control name="label11" text="房间代码"/>
+            <Control name="label9" text="卡模型类型"/>
+            <Control name="groupBox5" text="卡权限计划"/>
+            <Control name="columnHeader" text="门编号"/>
+            <Control name="columnHeader1" text="卡权限下标"/>
+            <Control name="columnHeader2" text="计划模板编号"/>
+            <Control name="buttonModify" text="修改"/>
+            <Control name="labelPlanNumber" text="计划号"/>
+            <Control name="buttonConfirm" text="确认"/>
+            <Control name="buttonExit" text="退出"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>GetAcsEvent</Name>
+        <Controls>
+            <Control name="GetAcsEvent" text="门禁事件获取"/>
+            <Control name="label1" text="主类型"/>
+            <Control name="label2" text="次类型"/>
+            <Control name="label3" text="时间类型"/>
+            <Control name="label5" text="姓名"/>
+            <Control name="checkBox1" text="有图片"/>
+            <Control name="label6" text="工号"/>
+            <Control name="label4" text="卡号"/>
+            <Control name="label7" text="开始时间"/>
+            <Control name="label8" text="结束时间"/>
+            <Control name="labBeginSerialNo" text="开始流水号"/>
+            <Control name="label9" text="结束流水号"/>
+            <Control name="label10" text="归纳时间类型"/>
+            <Control name="label11" text="搜索类型"/>
+            <Control name="label12" text="通道号"/>
+            <Control name="label13" text="监控点ID"/>
+            <Control name="btnSearchEvent" text="搜索事件"/>
+            <Control name="columnHeader1" text="序号"/>
+            <Control name="columnHeader2" text="日志时间"/>
+            <Control name="columnHeader3" text="主类型"/>
+            <Control name="columnHeader4" text="次类型"/>
+            <Control name="columnHeader5" text="卡号"/>
+            <Control name="columnHeader6" text="卡类型"/>
+            <Control name="columnHeader7" text="白名单单号"/>
+            <Control name="columnHeader8" text="报告上传通道"/>
+            <Control name="columnHeader9" text="读卡器种类"/>
+            <Control name="columnHeader10" text="读卡器编号"/>
+            <Control name="columnHeader11" text="门编号"/>
+            <Control name="columnHeader12" text="多重卡认证序号"/>
+            <Control name="columnHeader13" text="报警输入号"/>
+            <Control name="columnHeader14" text="报警输出号"/>
+            <Control name="columnHeader15" text="事件触发器编号"/>
+            <Control name="columnHeader16" text="RS485通道号"/>
+            <Control name="columnHeader17" text="群组编号"/>
+            <Control name="columnHeader18" text="人员通道号"/>
+            <Control name="columnHeader19" text="设备编号"/>
+            <Control name="columnHeader20" text="工号"/>
+            <Control name="columnHeader21" text="分控器编号"/>
+            <Control name="columnHeader22" text="就地控制器编号"/>
+            <Control name="columnHeader23" text="网口ID"/>
+            <Control name="columnHeader24" text="防区类型"/>
+            <Control name="columnHeader25" text="物理地址"/>
+            <Control name="columnHeader26" text="刷卡类型"/>
+            <Control name="columnHeader27" text="事件流水号"/>
+            <Control name="columnHeader28" text="通道控制器ID"/>
+            <Control name="columnHeader29" text="通道控制器灯板ID"/>
+            <Control name="columnHeader30" text="通道控制器红外转接板ID"/>
+            <Control name="columnHeader31" text="通道控制器红外对射ID"/>
+            <Control name="columnHeader32" text="归纳事件类型"/>
+            <Control name="columnHeader33" text="录像通道号"/>
+            <Control name="columnHeader34" text="人员类型"/>
+            <Control name="columnHeader35" text="读卡器当前验证方式"/>
+            <Control name="columnHeader36" text="工号（人员ID）"/>
+        </Controls>
+    </Form>
+    <UserControl>
+      
+    </UserControl>
+</AcsDemo>

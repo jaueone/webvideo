@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AcsDemo Language="English">
+    <Form>
+        <Name>AcsDemo</Name>
+        <Controls>
+            <Control name="AcsDemo" text="AcsDemo"/>
+            <Control name="labelLanguage" text="Language"/>
+            <Control name="groupBoxVersionInfo" text="Version Info"/>
+            <Control name="radioButtonAlarmInformation" text="Alarm Information"/>
+            <Control name="radioButtonLocalLog" text="Local Log"/>
+            <Control name="buttonClear" text="Clear"/>
+            <Control name="buttonSave" text="Save"/>
+            <Control name="tabPageDoorInfo" text="Door Info"/>
+            <Control name="tabPageDoorStatusPlan" text="Door Status Plan"/>
+            <Control name="tabPageRemoteControlDoor" text="Remote Control Door"/>
+            <Control name="tabPageCardReaderInfo" text="Card Reader Info"/>
+            <Control name="tabPageCardReaderPlan" text="Card Reader Plan"/>
+            <Control name="tabPageDeviceStatus" text="Device Status"/>
+            <Control name="tabPageRemoteControl" text="Remote Control"/>
+            <Control name="labelMagneticType" text="Magnetic Type"/>
+            <Control name="labelOpenButtonType" text="Open Button Type"/>
+            <Control name="labelOpenDuration" text="Open Duration"/>
+            <Control name="labelDisabledOpenDuration" text="Disabled Open Duration"/>
+            <Control name="labelMagneticAlarmTimeout" text="Magnetic Alarm Timeout"/>
+            <Control name="labelEnableDoorLock" text="Enable Door Lock"/>
+            <Control name="labelSuperPassword" text="Super Password"/>
+            <Control name="labelStressPassword" text="Stress Password"/>
+            <Control name="labelUnlockPassword" text="Unlock Password"/>
+            <Control name="buttonDoorCfgSave" text="Save"/>
+            <Control name="labelOpenDurationSecond" text="s"/>
+            <Control name="labelMagneticAlarmTimeoutSecond" text="s"/>
+            <Control name="labelDisabledOpenDurationSecond" text="s"/>
+            <Control name="buttonDoorStatusPlanManagement" text="Door Status Plan Management"/>
+            <Control name="buttonDoorPlanTemplateManagement" text="Plan Template Management"/>
+            <Control name="buttonDoorHolidayGroupManagement" text="Holiday Group Management"/>
+            <Control name="buttonDoorHolidayPlanManagement" text="Holiday Plan Management"/>
+            <Control name="buttonDoorWeekPlanManagement" text="Week Plan Management"/>
+            <Control name="buttonDoorOpen" text="Open"/>
+            <Control name="buttonDoorAlwaysClose" text="Always Close"/>
+            <Control name="buttonDoorAlwaysOpen" text="Always Open"/>
+            <Control name="buttonDoorClose" text="Close"/>
+            <Control name="labelSwipeIntervalSecond" text="s"/>
+            <Control name="buttonCardReaderCfgSave" text="Save"/>
+            <Control name="labelSwipeInterval" text="Swipe Interval"/>
+            <Control name="labelBuzzerPolarity" text="Buzzer Polarity"/>
+            <Control name="labelErrorLedPolarity" text="Error Led Polarity"/>
+            <Control name="label1OkLedPolarity" text="Ok Led Polarity"/>
+            <Control name="label1CardReaderEnable" text="Enable"/>
+            <Control name="labelPressTimeoutSecond" text="s"/>
+            <Control name="labelPressTimeout" text="Press Timeout"/>
+            <Control name="labelEnableFailAlarm" text="Enable Fail Alarm"/>
+            <Control name="labelOfflineCheckTimeSecond" text="s"/>
+            <Control name="labelOfflineCheckTime" text="Offline Check Time"/>
+            <Control name="labelEnableTamperCheck" text="Enable Tamper Check"/>
+            <Control name="labelMaxReadCardFailNum" text="Limit Failed Times"/>
+            <Control name="buttonCardReaderPlanManagement" text="Card Reader Plan Management"/>
+            <Control name="buttonCardReaderPlanTemplateManagement" text="Plan Template Management"/>
+            <Control name="buttonCardReaderHolidayGroupManagement" text="Holiday Group Management"/>
+            <Control name="buttonCardReaderHolidayPlanManagement" text="Holiday Plan Management"/>
+            <Control name="buttonCardReaderWeekPlanManagement" text="Week Plan Management"/>
+            <Control name="tabPageDoorStatus" text="Door Status"/>
+            <Control name="tabPageHostStatus" text="Host Status"/>
+            <Control name="tabPageCardReaderStatus" text="Card Reader Status"/>
+            <Control name="tabPageAlarmInStatus" text="Alarm In Status"/>
+            <Control name="tabPageAlarmOutStatus" text="Alarm Out Status"/>
+            <Control name="tabPageCaseStatus" text="Case Status"/>
+            <Control name="buttonCardPlanTemplateManagement" text="Plan Template Management"/>
+            <Control name="buttonCardHolidayGroupManagement" text="Holiday Group Management"/>
+            <Control name="buttonCardHolidayPlanManagement" text="Holiday Plan Management"/>
+            <Control name="buttonCardWeekPlanManagement" text="Week Plan Management"/>
+            <Control name="buttonFaceManagement" text="Face Management"/>
+            <Control name="buttonFingerPrintManagement" text="Finger Print Management"/>
+            <Control name="buttonCardNumAndUserLinkage" text="Card Num/User Linkage"/>
+            <Control name="buttonCardManagement" text="Card Management"/>
+            <Control name="buttonClearAcsHost" text="Clear Acs Host"/>
+            <Control name="buttonGetAcsHostEvent" text="Get Acs Host Event"/>
+            <Control name="buttonEventAndCardLinkageManagement" text="Event/Card Linkage Management"/>
+            <Control name="buttonUserManagement" text="User Management"/>
+            <Control name="tabPageUserManagement" text="User Management"/>
+            <Control name="tabPageParamCfg" text="Param Cfg"/>
+            <Control name="tabPageBasicParam" text="Basic Param"/>
+            <Control name="tabPageAcsXml" text="Acs Xml"/>
+            <Control name="tabPageModuleCfg" text="Module Cfg"/>
+            <Control name="tabPageRightCfg" text="Right Cfg"/>
+            <Control name="tabPageEventCfg" text="Event Cfg"/>
+            <Control name="buttonStaffManagementStaffCenter" text="Staff Management(Staff Center)"/>
+            <Control name="buttonCardManagementStaffCenter" text="Card Management(Staff Center)"/>
+            <Control name="buttonFaceRecordManagement" text="Face Record Management"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>AddDevice</Name>
+        <Controls>
+            <Control name="AddDevice" text="AddDevice"/>
+            <Control name="labelPassword" text="Password"/>
+            <Control name="textBoxUserName" text="admin"/>
+            <Control name="labelUserName" text="User Name"/>
+            <Control name="labelPort" text="Port"/>
+            <Control name="labelDeviceAddress" text="Device Address"/>
+            <Control name="labelLocalNode" text="Local Node"/>
+            <Control name="buttonCancel" text="Cancel"/>
+            <Control name="buttonAdd" text="Add"/>
+        </Controls>
+    </Form>
+    <Form>
+        <Name>CardManagement</Name>
+        <Controls>
+            <Control name="CardManagement" text="Card Management"/>
+            <Control name="buttonExit" text="Exit"/>
+        </Controls>
+    </Form>
+</AcsDemo>

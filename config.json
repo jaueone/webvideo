@@ -1,0 +1,15 @@
+﻿{
+  "Title": "video",
+  "LogPath": "log",
+  "Logo": "./video.png",
+  "Camera": {
+    "url": "http://169.254.128.98/",
+    "ip": "169.254.128.98",
+    "port": 8000,
+    "user": "admin",
+    "password": "abcd1234"
+  },
+  "Serial": {
+    "name": "COM7"
+  }
+}
